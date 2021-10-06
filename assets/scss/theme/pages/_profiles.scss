@@ -1,0 +1,71 @@
+// profile search page
+.profile-card {
+  border-radius: 0.3rem;
+  border: solid 2px #d1d1d1;
+  &:hover {
+    border: solid 2px #00a1e7;
+    cursor: pointer;
+  }
+  &__avatar {
+    background-color: #d1d1d1;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    .name {
+      font-size: 1.2rem;
+    }
+    .title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin: 0;
+    }
+    .address {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+    .email {
+      font-size: 0.8rem;
+    }
+    .status {
+      font-size: 1rem;
+      color: green;
+      font-weight: 500;
+    }
+    .highlight {
+      background: yellow;
+    }
+  }
+}
+
+.profile-list {
+  height: 50rem;
+  background-color: white;
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+  width: 38rem;
+
+  &__lists {
+    height: 44rem;
+    .not-found {
+      width: 38rem;
+      @media (max-width: 425px) {
+        width: 100%;
+      }
+      text-align: center;
+    }
+  }
+}
+
+.profile-search {
+  .input-group-text {
+    border-right: none;
+    background: none;
+  }
+  .form-control {
+    border-left: none;
+  }
+}

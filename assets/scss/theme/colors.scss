@@ -1,0 +1,44 @@
+/* colors */
+$colors: (
+  // primary: #005DFF,
+  // primary-light: lighten(#005DFF, 40%),
+  // primary-dark: darken(#005DFF, 40%),
+  // accent: #FFF6BB,
+  white: #ffffff,
+  white-dark: #eeeeee,
+  gray-light-bg: #FFDCD5,
+  black: #000000,
+  grey01: #222D3D,
+  grey02: #0A0B25,
+  grey03: #4D4D4D,
+  type-primary: #19192F,
+  purple: #645BFF,
+  gray-700:#353760,
+  light-gray:#E8EFF7,
+  gray-400: #A2A2B9,
+  type-secoundary:#474759,
+  red-500:#D74165,
+  type-tiertary:#A2A2B9
+);
+
+// =============================================================================
+// Color classes
+// =============================================================================
+
+// @each $name, $hex in $colors {
+//     .has-background-#{"" + $name} {
+//         background-color: $hex;
+//     }
+//     .has-text-#{"" + $name} {
+//         color: $hex;
+//     }
+//     .has-text-#{"" + $name}-hover {
+//         &:hover {
+//             color: $hex;
+//         }
+//     }
+// }
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}

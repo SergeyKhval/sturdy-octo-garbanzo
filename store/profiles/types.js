@@ -1,0 +1,2 @@
+export const SET_PROFILE_LIST = 'SET_PROFILE_LIST'
+export const SET_KEYWORD = 'SET_KEYWORD'
