@@ -19,7 +19,7 @@
 </template>
 <script>
 import { mapGetters } from 'vuex'
-import ProfileSearch from './ProfileSearch'
+import ProfileSearch from './profileSearch'
 import ProfileCard from './profileCard'
 export default {
   name: 'ProfileList',
